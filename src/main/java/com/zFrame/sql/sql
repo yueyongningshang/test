@@ -1,0 +1,14 @@
+sqlServer:
+1.时间：getdate() 当前日期
+2.格式化：
+convert(varchar(8),getdate(),112)  yyyyMMdd
+convert(varchar(10),getdate(),120) yyyy-MM-dd
+convert(varchar(19),getdate(),120) yyyy-MM-dd hh:mi:ss
+
+mySql: 
+日期转字符串：DATE_FORMAT(now(),'%Y-%m-%d %H:%i:%s')
+字符串转日期：select str_to_date(CONCAT('2019-07-23' ,'23:59:59') ,'%Y-%m-%d %H:%i:%s')
+
+Oracle:
+to_char(sysdate,'yyyymmdd')
+select to_date('2019-01-01 13:14:20','yyyy-MM-dd HH24:mm:ss') from dual;
